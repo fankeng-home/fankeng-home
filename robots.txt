@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fankeng-home.github.io/fankeng-home/sitemap.xml
