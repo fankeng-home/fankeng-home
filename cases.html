@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="姊佃偗鍏ㄥ眿瀹氬埗瀹㈡埛瀹炶妗堜緥灞曠ず锛屾兜鐩栫幇浠ｇ畝绾︺€佹剰寮忔瀬绠€銆佷腑鍙ら銆佹硶寮忓鍙ゃ€佹柊涓紡绛夊绉嶉鏍硷紝瀹㈠巺/鍗у/鍘ㄦ埧/鍏ㄥ眿瀹炴櫙鏁堟灉銆?>
+<title>妗堜緥灞曠ず - 姊佃偗鍏ㄥ眿瀹氬埗</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">姊佃偗<span>FINCAN</span></a>
+    <button class="nav-toggle" aria-label="鑿滃崟" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">棣栭〉</a></li>
+      <li><a href="about.html">鍏充簬鎴戜滑</a></li>
+      <li><a href="products.html">浜у搧灞曠ず</a></li>
+      <li><a href="cases.html" class="active">妗堜緥灞曠ず</a></li>
+      <li><a href="service.html">鏈嶅姟娴佺▼</a></li>
+      <li><a href="news.html">鏂伴椈璧勮</a></li>
+      <li><a href="partners.html">鍚堜綔浼欎即</a></li>
+      <li><a href="contact.html">鑱旂郴鎴戜滑</a></li>
+      <li class="nav-phone">18933530339 / 400-6999-289</li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="gold-line"></div>
+    <h1>妗堜緥灞曠ず</h1>
+    <p class="page-breadcrumb"><a href="index.html">棣栭〉</a> / 妗堜緥灞曠ず</p>
+  </div>
+</section>
+
+<section class="section-pad bg-white">
+  <div class="container">
+    <div class="text-center">
+      <p style="font-size:0.85rem;color:var(--stone-400);margin-bottom:20px;">鎸夐鏍肩瓫閫?/p>
+      <div class="filter-bar">
+        <button class="filter-tag active" onclick="filterCases('all')">鍏ㄩ儴</button>
+        <button class="filter-tag" onclick="filterCases('鐜颁唬绠€绾?)">鐜颁唬绠€绾?/button>
+        <button class="filter-tag" onclick="filterCases('鎰忓紡鏋佺畝')">鎰忓紡鏋佺畝</button>
+        <button class="filter-tag" onclick="filterCases('涓彜椋?)">涓彜椋?/button>
+        <button class="filter-tag" onclick="filterCases('娉曞紡澶嶅彜')">娉曞紡澶嶅彜</button>
+        <button class="filter-tag" onclick="filterCases('鏂颁腑寮?)">鏂颁腑寮?/button>
+      </div>
+    </div>
+
+    <div class="case-grid" id="caseGrid">
+      <div class="case-card" data-style="鐜颁唬绠€绾?>
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>娣卞湷鍗楀北 路 闃冲厜甯?/h4><div class="case-meta"><span>120銕?/span><span>鐜颁唬绠€绾?/span><span>45澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">涓変唬鍚屽爞锛屽叏灞嬪畾鍒惰。鏌?姗辨煖+姒绘绫筹紝鏀剁撼绌洪棿鎻愬崌40%</p></div>
+      </div>
+      <div class="case-card" data-style="鎰忓紡鏋佺畝">
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>鎯犲窞澶т簹婀?路 缈＄繝灞?/h4><div class="case-meta"><span>98銕?/span><span>鎰忓紡鏋佺畝</span><span>38澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">骞磋交澶濠氭埧锛屽紑鏀惧紡鍘ㄦ埧+琛ｅ附闂翠竴浣撳寲璁捐</p></div>
+      </div>
+      <div class="case-card" data-style="鏂颁腑寮?>
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>娣卞湷榫欏崕 路 鏄熸渤涓瑰牑</h4><div class="case-meta"><span>156銕?/span><span>鏂颁腑寮?/span><span>52澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">澶у钩灞傚叏妗堣璁★紝涔︽埧+鑼跺+涓诲崸濂楁埧涓€浣撳寲浜や粯</p></div>
+      </div>
+      <div class="case-card" data-style="涓彜椋?>
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>鎯犲煄 路 閲戝北婀?/h4><div class="case-meta"><span>89銕?/span><span>涓彜椋?/span><span>35澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">鐑埍澶嶅彜鏂囧寲鐨勫勾杞讳笟涓伙紝鑳℃鏈ㄥ叏灞嬪畾鍒?/p></div>
+      </div>
+      <div class="case-card" data-style="娉曞紡澶嶅彜">
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>娣卞湷瀹濆畨 路 瑗夸埂</h4><div class="case-meta"><span>110銕?/span><span>娉曞紡澶嶅彜</span><span>42澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">娉曞紡绾挎潯+鐜颁唬鍔熻兘锛屼富鍗ц。甯介棿+濂冲効鎴垮叕涓婚瀹氬埗</p></div>
+      </div>
+      <div class="case-card" data-style="鐜颁唬绠€绾?>
+        <div class="case-img-wrap"><div style="background:linear-gradient(135deg, #e8e4df 0%, #d5cfc8 100%);width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;color:#b8b0a8;font-size:14px;">鍥剧墖鍗犱綅</div></div>
+        <div class="case-info"><h4>娣卞湷榫欏矖 路 涓囩鍩?/h4><div class="case-meta"><span>135銕?/span><span>鐜颁唬绠€绾?/span><span>48澶?/span></div><p style="font-size:0.85rem;color:var(--stone-600);margin-top:8px;">鍥涘彛涔嬪锛屽叏灞嬫敹绾崇郴缁熻璁★紝闅愬舰闂?鏁村鏌滀綋</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad cta-section bg-grain">
+  <div class="container">
+    <div class="gold-line"></div>
+    <h2>鎮ㄧ殑瀹朵篃鍙互濡傛鍑轰紬</h2>
+    <p>棰勭害鍏嶈垂閲忔埧锛岃幏鍙栦笓灞炲畾鍒舵柟妗?/p>
+    <a href="contact.html" class="btn btn-primary">绔嬪嵆棰勭害</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>姊佃偗鍏ㄥ眿瀹氬埗</h3>
+        <p>婧愬ご宸ュ巶鐩翠緵 路 璁捐涓€瀵逛竴<br>10000銕″伐鍘?路 5000銕″睍鍘?br>ISO 9001:2015 璁よ瘉</p>
+      </div>
+      <div>
+        <h4>蹇€熷鑸?/h4>
+        <ul>
+          <li><a href="about.html">鍏充簬鎴戜滑</a></li>
+          <li><a href="products.html">浜у搧灞曠ず</a></li>
+          <li><a href="cases.html">妗堜緥灞曠ず</a></li>
+          <li><a href="service.html">鏈嶅姟娴佺▼</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>鏇村淇℃伅</h4>
+        <ul>
+          <li><a href="news.html">鏂伴椈璧勮</a></li>
+          <li><a href="partners.html">鍚堜綔浼欎即</a></li>
+          <li><a href="contact.html">鑱旂郴鎴戜滑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>鑱旂郴鏂瑰紡</h4>
+        <p>鏈嶅姟鐑嚎锛?8933530339 / 400-6999-289<br>宸ュ巶鍦板潃锛氭儬宸炲競澶т簹婀捐タ鍖?br>鍒╄揪浜垮伐涓氬洯A鏍?br>锛堝墠灞曞巺鍚庡伐鍘傦級</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2018-2026 娣卞湷甯傛⒌鑲叏灞嬪畾鍒跺灞呮湁闄愬叕鍙?鐗堟潈鎵€鏈?/span>
+      <span>绮CP澶噚xxxxxxx鍙?/span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-cta">
+  <div class="float-panel" id="floatPanel">
+    <p style="font-size:0.85rem;color:var(--stone-600);">鍜ㄨ鐑嚎</p>
+    <p class="phone">18933530339 / 400-6999-289</p>
+    <p style="font-size:0.8rem;color:var(--stone-400);margin-top:4px;">鍛ㄤ竴鑷冲懆鏃?9:00-21:00</p>
+  </div>
+  <button class="float-btn" onclick="document.getElementById('floatPanel').classList.toggle('show')" aria-label="鍦ㄧ嚎鍜ㄨ">&#9990;</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
